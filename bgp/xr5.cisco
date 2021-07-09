@@ -3,15 +3,11 @@
  session-timeout 0
 !
 interface Loopback0
- ipv4 address 31.31.31.31 255.255.255.255
- ipv6 address 2001:31:31:31::31/128
+ ipv4 address 35.35.35.35 255.255.255.255
+ ipv6 address 2001:35:35:35::35/128
 !
 interface GigabitEthernet0/0/0/0
- ipv4 address 10.5.31.31 255.255.255.0
- ipv6 address 2001:10:5:31::31/64
+ ipv4 address 10.34.35.35 255.255.255.0
+ ipv6 address 2001:10:34:35::35/64
  no shut
 !
-interface GigabitEthernet0/0/0/1
- ipv4 address 10.31.34.31 255.255.255.0
- ipv6 address 2001:10:31:34::31/64
- no shut
