@@ -21,10 +21,16 @@ topology:
       kind: vr-csr
     xr1:
       kind: vr-xrv9k
+      env:
+        BOOT_DELAY: 180
     xr4:
       kind: vr-xrv9k
+      env:
+        BOOT_DELAY: 360
     xr5:
       kind: vr-xrv9k
+      env:
+        BOOT_DELAY: 440
     mysocketio:
       kind: mysocketio
       image: ghcr.io/hellt/mysocketctl:0.2.0
