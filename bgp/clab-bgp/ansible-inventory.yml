@@ -1,0 +1,20 @@
+all:
+  children:
+    mysocketio:
+      hosts:
+        clab-bgp-mysocketio:
+          ansible_host: 172.20.20.3
+    vr-csr:
+      hosts:
+        clab-bgp-xe-r1:
+          ansible_host: 172.20.20.5
+        clab-bgp-xe-r2:
+          ansible_host: 172.20.20.6
+        clab-bgp-xe-r4:
+          ansible_host: 172.20.20.2
+        clab-bgp-xe-r5:
+          ansible_host: 172.20.20.4
+    vr-xrv9k:
+      hosts:
+        clab-bgp-xr-r1:
+          ansible_host: 172.20.20.7
