@@ -27,10 +27,6 @@ topology:
       kind: vr-xrv9k
       env:
         BOOT_DELAY: 360
-    xr5:
-      kind: vr-xrv9k
-      env:
-        BOOT_DELAY: 440
     mysocketio:
       kind: mysocketio
       image: ghcr.io/hellt/mysocketctl:0.2.0
@@ -42,4 +38,3 @@ topology:
     - endpoints: ["xe5:eth3", "xr1:eth1"]
     - endpoints: ["xr1:eth2", "xr4:eth1"]
     - endpoints: ["xe4:eth2", "xe2:eth3"]
-    - endpoints: ["xr4:eth2", "xr5:eth1"]
